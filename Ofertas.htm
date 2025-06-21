@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo Sanrio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffeef8;
+      font-family: 'Cookie', cursive;
+    }
+
+    /* Barra de navegación */
+    .navbar {
+      background-color: #ffb6d9;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      justify-content: space-between;
+    }
+
+    .navbar img {
+      height: 50px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+      margin-left: 20px;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Catálogo de productos */
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .producto {
+      background-color: #fff0f5;
+      border: 2px solid #ff69b4;
+      border-radius: 20px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .producto img {
+      width: 100%;
+      border-radius: 15px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .producto h3 {
+      color: #ff1493;
+      margin: 10px 0 5px;
+    }
+
+    .producto p {
+      color: #555;
+      font-size: 18px;
+    }
+
+    .producto button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: 'Cookie', cursive;
+    }
+
+    .producto button:hover {
+      background-color: #ff1493;
+    }
+
+    /* Botón lateral flotante */
+    .btn-lateral {
+      position: fixed;
+      right: 20px;
+      bottom: 80px;
+      background-color: #ff69b4;
+      color: white;
+      font-size: 28px;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      line-height: 60px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 999;
+      text-decoration: none;
+      font-family: 'Cookie', cursive;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-lateral:hover {
+      background-color: #ff1493;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <div class="navbar">
+    <a href="index.html">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Sanrio_Logo.svg/2560px-Sanrio_Logo.svg.png" alt="Sanrio Logo">
+    </a>
+    <div>
+      <a href="econommerce-website.htm">Volver a la tienda</a>
+
+      <a href="contactos.htm">Contacto</a>
+    </div>
+  </div>
+
+  <!-- Catálogo de productos -->
+  <div class="catalogo" id="catalogo">
+    <!-- 12 productos -->
+    <div class="producto">
+      <img src="https://i.pinimg.com/564x/7b/17/68/7b176830f40e153317c2f60c5d23f5db.jpg" alt="Producto 1">
+      <h3>Peluche Hello Kitty</h3>
+      <p>Suave y adorable</p>
+      <button>Ver más</button>
+    </div>
+     <div class="catalogo" id="catalogo">
+    <!-- 12 productos -->
+    <div class="producto">
+      <img src="https://i.pinimg.com/564x/7b/17/68/7b176830f40e153317c2f60c5d23f5db.jpg" alt="Producto 1">
+      <h3>Peluche Hello Kitty</h3>
+      <p>Suave y adorable</p>
+      <button>Ver más</button>
+    </div>
+
+
+
+
+

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Candy Stars Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fff0f6;
+      font-family: 'Dancing Script', cursive;
+      text-align: center;
+      line-height: 1.5;
+      min-height: 100vh;
+      padding: 20px;
+      color: #4a2c4c;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #ff66b2;
+      margin: 40px 0;
+    }
+
+    .navbar {
+      width: 100%;
+      max-width: 1200px;
+      background: #ffe6f2;
+      padding: 12px 24px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 8px rgba(255, 153, 204, 0.3);
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .navbar__logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .navbar__logo img {
+      width: 60px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(255, 102, 163, 0.5);
+    }
+
+    .navbar__logo span {
+      font-family: 'Pacifico', cursive;
+      font-size: 28px;
+      color: #ff66a3;
+    }
+
+    .navbar__links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .navbar__links a {
+      text-decoration: none;
+      color: #ff3399;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 6px 14px;
+      border-radius: 14px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar__links a:hover {
+      background-color: #ffb3d9;
+    }
+
+    .carousel-container {
+      width: 100%;
+      max-width: 1000px;
+      overflow: hidden;
+      border-radius: 16px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 12px rgba(255, 153, 204, 0.4);
+    }
+
+    .carousel-inner {
+      height: 300px;
+    }
+
+    .carousel-container img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #ff66b2;
+      border-radius: 50%;
+      padding: 10px;
+    }
+
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto 40px;
+    }
+
+    .producto {
+      background-color: #ffe6f2;
+      border-radius: 18px;
+      padding: 16px;
+      box-shadow: 0 4px 12px rgba(255, 102, 163, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .producto:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(255, 102, 163, 0.4);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50px;
+      margin-bottom: 12px;
+    }
+
+    .producto h2 {
+      font-size: 22px;
+      color: #d63384;
+      margin: 10px 0 6px;
+    }
+
+    .producto p {
+      font-size: 18px;
+      color: #6c3483;
+      margin: 4px 0 10px;
+    }
+
+    .boton {
+      background-color: #ff99cc;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 24px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .boton:hover {
+      background-color: #ff66b2;
+    }
+  </style>
+</head>
+   
+  </style>
+</head>
+</body>
+<body>
+<nav class="navbar">
+    <div class="navbar__logo">
+      <img src="crea un logo estilo kawaii con moños. El nombre de la pagina es Candy Stars Store.jpg">
+      <span>Candy Stars Store</span>
+    </div>
+    <div class="navbar__links">
+      <a href="econommerce-website.htm">Inicio</a>
+      <a href="catalogo.htm">Catálogo</a>
+      <a href="Ofertas.htm">Ofertas</a>
+      <a href="contactos.htm">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- Carrusel Bootstrap con botones y movimiento automático -->
+  <div class="carousel-container">
+    <div id="carouselSanrio" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="3b41c485-7f00-4487-a4d6-873f26320088.jpeg" class="d-block w-100" alt="Carrusel 1">
+      </div>
+      <div class="carousel-item">
+        <img src="☆ briannaisland.jpeg" class="d-block w-100" alt="Carrusel 2">
+      </div>
+      <div class="carousel-item">
+        <img src="Sanrio plushies0.jpg" class="d-block w-100" alt="Carrusel 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSanrio" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselSanrio" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+  <h1>✨ Productos Destacados ✨</h1>
+
+  <div class="catalogo">
+    <div class="producto">
+      <img src="0.0.jpeg" alt="Peluche 1">
+      <h2>Peluche Rosa</h2>
+      <p>$1500</p>
+<a href="pelucheMyMelody.htm"class="boton">Ver Detalles</a>
+</style>
+    </div>
+    <div class="producto">
+      <img src="pijama.jpeg" alt="Peluche 2">
+      <h2>Peluche Hello Kitty</h2>
+      <p>$1800</p>
+      <a href="pijama.htm" class="boton">Ver más</a>
+    </div>
+    <div class="producto">
+      <img src="gorritos.jpeg" alt="Peluche 3">
+      <h2>Gorro Sanrio</h2>
+      <p>$1200</p>
+      <a href="gorros.htm" class="boton">Ver más</a>
+    </div>
+  </div>
+   <div class="catalogo">
+    <div class="producto">
+      <img src="04f5fd3e-29c5-4c5a-97cb-8b1c67ffec1a.jpeg" alt="Peluche 1">
+      <h2>Peluche Rosa</h2>
+      <p>$1500</p>
+      <a href="tazaMyMelody.htm" class="boton">Ver más</a>
+    </div>
+    <div class="producto">
+      <img src="hello kitty.jpeg" alt="Peluche 2">
+      <h2>Peluche Hello Kitty</h2>
+      <p>$1800</p>
+      <a href="pijama1.htm" class="boton">Ver más</a>
+    </div>
+    <div class="producto">
+      <img src="4 Books, Sanrio Kuromi, Melodi, And Southwest Spiral Notebook - Essential Diary And Vocabulary Books For Students - Essential Stationery For Returning To School.jpeg"Peluche 3">
+      <h2>Gorro Sanrio</h2>
+      <p>$1200</p>
+      <a href="cuadernos.htm" class="boton">Ver más</a>
+    </div>
+  </div>
+   <div class="catalogo">
+    <div class="producto">
+      <img src="08131524-aa1d-4f23-ab64-73b502c7547b.jpeg" alt="Peluche 1">
+      <h2>Peluche Rosa</h2>
+      <p>$1500</p>
+      <a href="almohadones.htm" class="boton">Ver más</a>
+    </div>
+    <div class="producto">
+      <img src="Sanrio Kuromi Gel Pen Cartoon Anime Cute Student Erasable Pen Quick Drying Pen Children Learning.jpeg" alt="Peluche 2">
+      <h2>Peluche Hello Kitty</h2>
+      <p>$1800</p>
+      <a href="bolis.htm" class="boton">Ver más</a>
+    </div>
+    <div class="producto">
+      <img src="Sanrio keychains.jpeg" alt="Peluche 3">
+      <h2>Gorro Sanrio</h2>
+      <p>$1200</p>
+      <a href="keychans.htm" class="boton">Ver más</a>
+    </div>
+  </div>
+   <div class="catalogo">
+    <div class="producto">
+      <img src="Sanrio Plush0.jpg" alt="Peluche 1">
+      <h2>Peluche Rosa</h2>
+      <p>$1500</p>
+      <a href="peluches.htm" class="boton">Ver más</a>
+    </div>
+    <div class="producto">
+      <img src="Sanrio kitchen my melody spoons.jpeg" alt="Peluche 2">
+      <h2>Peluche Hello Kitty</h2>
+      <p>$1800</p>
+      <a href="kitchen.htm" class="boton">Ver más</a>
+    </div>
+    <div class="producto">
+      <img src="sudaderas.jpeg" alt="Peluche 3">
+      <h2>Gorro Sanrio</h2>
+      <p>$1200</p>
+      <a href="sudaderas.htm" class="boton">Ver más</a>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+ 

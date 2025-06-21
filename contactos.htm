@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto</title>
+  <style>
+    body {
+      font-family: cursive;
+      background: #f0f8ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Barra de navegación */
+    nav {
+      background-color: #aeeeee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      border-bottom: 3px solid #87cefa;
+    }
+
+    .nav-left a {
+      text-decoration: none;
+      color: #444;
+      background-color: #d0f0ff;
+      padding: 8px 15px;
+      border-radius: 12px;
+      font-style: italic;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .nav-left a:hover {
+      background-color: #87cefa;
+      color: white;
+    }
+
+    .nav-right h1 {
+      margin: 0;
+      color: #444;
+      font-size: 24px;
+      font-style: italic;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      font-style: italic;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 2px solid #add8e6;
+      border-radius: 10px;
+      font-size: 16px;
+      font-style: italic;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #87cefa;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      font-style: italic;
+    }
+
+    button:hover {
+      background-color: #00bfff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      background-color: #aeeeee;
+      border-top: 3px solid #87cefa;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Barra de navegación con botón y título -->
+<nav>
+  <div class="nav-left">
+    <a href="index.htm">⬅ Volver al inicio</a>
+  </div>
+  <div class="nav-right">
+    <h1>🌷 Contáctanos</h1>
+  </div>
+</nav>
+
+<div class="container">
+  <form action="#" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</div>
+
+<footer>
+  🌸 Gracias por contactarte con nosotros 🌸
+</footer>
+
+</body>
+</html>
+
